@@ -15,8 +15,7 @@ Features:
 
 import asyncio
 import aiohttp
-from typing import List, Dict, Optional, Tuple
-from collections import Counter
+from typing import Dict, Tuple
 
 class DomainClassifier:
     """
@@ -103,7 +102,7 @@ class GibsonOrchestrator:
         """
         return await self.route_query(query)
 
-# For manual quick test (run python ix_gibson/core/orchestrator.py "your query here")
+# Manual test
 if __name__ == "__main__":
     import sys
     import asyncio
